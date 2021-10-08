@@ -772,10 +772,12 @@ html {
 .header__cart .cart li:hover {
     background-color: #eeeded;
 }
-.header__cart .cart li {
+.header__cart .cart li a{
     display: flex;
     justify-content: space-between;
     padding: 1rem;
+    text-decoration: none;
+    color: #333;
 }
 .header__cart .cart img {
     width: 4rem;
@@ -1284,6 +1286,7 @@ html {
 }
 .container-page li a:hover {
     background-color: #f25b40;
+    color: #fff;
 }
 /* footer */
 .footer {
@@ -1552,6 +1555,9 @@ html {
 @media (min-width: 1025px) {
     .hide-on-pc {
         display: none;
+    }
+    .cart .cart__wrap-subhead .cart__item-delete:hover {
+        text-decoration: underline;
     }
 }
 
